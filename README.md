@@ -19,12 +19,12 @@ This was my first CRUD application, it's used to track habits. Made with C# and 
 - Create a report functionality (I didn't complete this one)
 
 ### Features
-- SQLite initialization: The program creates two tables (habits and records) when it starts
-- Spectre.Console prompts: Provides cleaner console output and easier user selection
-- CRUD operations: Add, update, read, and delete habits and records
+- Clean console UI using Spectre.Console prompts
+- Full CRUD operations with Dapper
+- Clear separation between controller, service, and repository layers
+- Custom exception handling
 
 ### Lessons Learned:
-This project involved a lot of repetition, which helped me understand how to open SQLite connections and manage a database using queries.
-It was also my largest project so far, and I had to think carefully about how to organize my code and avoid repetition. Some parts still need improvement, especially in structure and organization.
+This project helped me better understand responsibility boundaries in a growing codebase. Separating concerns is not trivial, especially as new features are added, and I often found myself refactoring code to improve structure and readability.
 
-I realized that understanding the problem before coding saves a lot of time. At some point the project grew so much that finding things became difficult, and refactoring felt overwhelming because I was learning many new concepts at the same time.
+I also realized that I tend to overcomplicate simple solutions, which taught me the importance of balancing clean architecture with pragmatism. Along the way, I learned and practiced concepts such as generic types, interfaces, actions, exception handling, and working with third-party libraries.
